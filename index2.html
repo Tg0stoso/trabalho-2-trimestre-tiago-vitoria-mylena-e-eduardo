@@ -1,1 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melissa Work</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Trabalho da melissa</h1>
+    </header>
+    <nav>
+        <a href="#1">Objeto </a>|
+        <a href="#2">Atributo </a>|
+        <a href="#3">Operação </a>|
+        <a href="#4">Classe </a>|
+        <a href="#5">Evento </a>|
+        <a href="#6">Estado </a>|
+        <a href="#7">Abstração </a>|
+        <a href="#8">Encapsulamento </a>|
+        <a href="#9">Generalização </a>|
+        <a href="#10">Polimorfismo </a>
+    </nav>
+
+    <main>
+        <h2>Conceitos</h2>
+        <p> Aqui explicaremos os principais conceitos da Orientação a Objetos, uma forma de programar que
+            organiza o código em torno de objetos — entidades que combinam dados (atributos) e comportamentos (métodos).
+            Vamos abordar tópicos fundamentais como objeto, atributo, operação, classe, evento, estado, abstração,
+            encapsulamento, generalização, polimorfismo, entendendo como cada um contribui para criar programas mais
+            estruturados, flexíveis e eficientes.</p>
+        <nav>
+            <section id="1">
+                <h2>Objeto</h2>
+                <p>Um objeto é uma instância concreta de uma classe, ou seja, a realização do “molde” definido pela
+                    classe.
+                    Ele representa algo real ou conceitual dentro do sistema, possuiAndo seus próprios valores para os
+                    atributos definidos.</p>
+                <p>Exemplo: No sistema, podemos ter o objeto `alunoMaria` que representa a aluna Maria Silva. Ela tem
+                    dados
+                    próprios como nome, idade e matrícula. Mesmo que haja outros alunos, cada um será um objeto
+                    distinto,
+                    mesmo que sejam da mesma classe **Aluno**.</p>
+            </section>
+
+            <section id="2">
+                <h2>Atributo</h2>
+                <p>Os atributos são as características ou propriedades que descrevem um objeto. Eles guardam informações
+                    específicas de cada instância.</p>
+                <p>Exemplo: Para o objeto `alunoMaria`:
+                    * nome = "Maria Silva"
+                    * idade = 15
+                    * matrícula = 12345
+                    Esses valores diferenciam Maria de outros alunos no sistema.
+                </p>
+            </section>
+
+            <section id="3">
+                <h2>Operação</h2>
+                <p>Uma operação ou método é um comportamento ou ação que um objeto pode realizar. É através das
+                    operações
+                    que os objetos “fazem coisas” ou modificam seu estado.</p>
+                <p>Exemplo: O objeto `alunoMaria` pode executar operações como:
+                    * `realizarMatricula()` → registra a matrícula da aluna no sistema.
+                    * `atualizarNota()` → altera a nota de uma disciplina.
+                    * `exibirDados()` → mostra as informações da aluna na tela.
+                </p>
+            </section>
+
+            <section id="4">
+                <h2>Classe</h2>
+                <p>DA classe é como um molde ou modelo que define quais atributos e operações um tipo de objeto terá.
+                    Ela
+                    não é o objeto em si, mas a descrição dele.
+                </p>
+                <p>Exemplo: A classe Aluno define que todos os alunos terão atributos como nome, idade, matrícula e
+                    métodos
+                    como `realizarMatricula()` e `atualizarNota()`. A partir dessa classe, podemos criar quantos objetos
+                    de
+                    aluno forem necessários, cada um com seus próprios dados.</p>
+            </section>
+
+            <section id="5">
+                <h2>Evento</h2>
+                <p>Um evento é algo que acontece no sistema e pode desencadear uma reação ou mudança no estado de um
+                    objeto.
+                    Ele geralmente é externo ou provocado por uma ação do usuário.</p>
+                <p>Exemplo: “Aluno concluiu a prova” é um evento que pode disparar o cálculo automático da média final
+                    do
+                    aluno no sistema.</p>
+            </section>
+
+            <section id="6">
+                <h2>Estado</h2>
+                <p>O estado de um objeto é a situação em que ele se encontra em um momento específico, determinada pelos
+                    valores atuais de seus atributos.
+                </p>
+                <p>Exemplo: O estado atual de `alunoMaria` pode ser:
+                    * nome: "Maria Silva"
+                    * idade: 15
+                    * matrícula: 12345
+                    * situação: "Aprovado"
+                    Se algum atributo mudar (como a situação), o estado também muda.</p>
+            </section>
+
+            <section id="7">
+                <h2>Abstração</h2>
+                <p>Abstração é o processo de selecionar apenas as informações essenciais de um objeto e ignorar os
+                    detalhes
+                    irrelevantes para o contexto do sistema. Isso facilita a compreensão e o desenvolvimento.</p>
+                <p>Exemplo: Ao criar a classe Aluno, não é necessário armazenar informações como “cor favorita” ou
+                    “marca do
+                    tênis” se essas informações não são usadas pelo sistema escolar. Focamos apenas no que é importante:
+                    nome, idade, matrícula, notas etc.</p>
+            </section>
+
+            <section id="8">
+                <h2>Encapsulamento</h2>
+                <p>O encapsulamento protege os dados de um objeto, permitindo que eles sejam acessados ou modificados
+                    apenas
+                    por métodos específicos, e não diretamente. Isso evita alterações indevidas e mantém a integridade
+                    dos
+                    dados.
+                </p>
+                <p>Exemplo: Em vez de permitir que qualquer parte do sistema altere a nota de um aluno diretamente
+                    (`nota =
+                    -5`), criamos um método `definirNota()` que valida se a nota está entre 0 e 10 antes de aceitar a
+                    alteração.</p>
+            </section>
+
+            <section id="9">
+                <h2>Generalização</h2>
+                <p>A generalização é o processo de criar uma classe mais genérica para servir como base para outras mais
+                    específicas. Essa é a base da herança na programação orientada a objetos.</p>
+                <p>Exemplo: Criamos uma classe Pessoa com atributos (nome, idade) e métodos (falar(), andar()). Depois,
+                    criamos Aluno e Professor como subclasses que herdam essas características e ainda podem ter
+                    atributos e
+                    métodos próprios.</p>
+            </section>
+
+            <section id="0">
+                <h2>Polimorfismo</h2>
+                <p>O polimorfismo é a capacidade de usar o mesmo método ou operação, mas com comportamentos diferentes
+                    dependendo de qual objeto o executa.
+                </p>
+                <p>Exemplo: O método `exibirInformacoes()` existe na classe Pessoa, mas:
+                    * Se for um objeto Aluno, mostra nome, idade, série e notas.
+                    * Se for um objeto Professor, mostra nome, idade, disciplinas e carga horária.</p>
+            </section>
+        </nav>
+        <h2>Conclusão</h2>
+        <p> Em suma, compreendemos que quando os conceitos são aplicados de forma correta, esses princípios
+            permitem criar programas mais claros, flexíveis e adaptáveis às mudanças, tornando o desenvolvimento
+            mais ágil e garantindo a qualidade do produto final.</p>
+    </main>
+    <footer class="turma3">
+        Turma 3º 01 ipi Eduardo Pereira, Mylena Pagcheon Soares, Tiago Gomes Vieira, Vitoria Pereira Roela.
+    </footer>
+</body>
+
+</html>
